@@ -13,4 +13,8 @@ public class Rectangle {
         this.height = height;
         this.width = width;
     }
+
+    public Integer getPerimeter(){
+        return 2*(height + width);
+    }
 }
