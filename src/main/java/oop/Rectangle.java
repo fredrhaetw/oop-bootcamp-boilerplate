@@ -1,20 +1,24 @@
 package oop;
 
 public class Rectangle {
-    private final Integer height;
-    private final Integer width;
+    public static final int PERIMETER_MULTIPLYING_FACTOR = 2;
+    private final int height;
+    private final int width;
 
-    public Rectangle(Integer height, Integer width) {
-
-        if(height.equals(width) || height <= 0 || width <= 0){
-            throw new IllegalArgumentException("The height should be different from the width and both higher than zero.");
-        }
-
+    public Rectangle(final int height, final int width){
         this.height = height;
         this.width = width;
     }
 
-    public Integer getPerimeter(){
-        return 2*(height + width);
+    public int getHeight() {
+        return height;
+    }
+
+    public int getWidth() {
+        return width;
+    }
+
+    public int getPerimeter() {
+        return PERIMETER_MULTIPLYING_FACTOR * (height + width);
     }
 }
