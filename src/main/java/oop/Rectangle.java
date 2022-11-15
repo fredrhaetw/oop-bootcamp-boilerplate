@@ -19,6 +19,10 @@ public class Rectangle {
     }
 
     public int getPerimeter() {
-        return PERIMETER_MULTIPLYING_FACTOR * (height + width);
+        return PERIMETER_MULTIPLYING_FACTOR * (this.getHeight() + this.getWidth());
+    }
+
+    public int getArea() {
+        return this.getHeight() * this.getWidth();
     }
 }

@@ -28,4 +28,11 @@ public class RectangleTest {
         assertEquals(rectangle.getWidth(), 4);
     }
 
+    @Test
+    public void itShouldCalculateArea() {
+        Rectangle rectangle = new Rectangle(3,4);
+
+        assertEquals(rectangle.getArea(), 12);
+    }
+
 }
